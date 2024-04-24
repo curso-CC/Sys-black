@@ -1,0 +1,36 @@
+main {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	max-width: 1200px;
+
+	width: 100vw;
+}
+
+main div .image {
+	background: rgb(26,44,46);
+	background: -moz-radial-gradient(circle, rgb(46, 26, 26) 0%, rgba(23,23,23,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(26,44,46,1) 0%, rgba(23,23,23,1) 100%);
+	background: radial-gradient(circle, rgba(26,44,46,1) 0%, rgba(23,23,23,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a2c2e", endColorstr="#171717", GradientType=1);
+
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+
+	margin-left: 2.5rem;
+}
+
+
+main .description {
+	width: 675px;
+}
+
+main .description h1{
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+
+main .description p{
+    font-size: 1.25rem;
+}
