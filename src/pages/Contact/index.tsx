@@ -50,6 +50,7 @@ export function Contact() {
 				</section>
 
 				<form id='contact' onSubmit={handleSubmit(onSubmit)}>
+
 					<label htmlFor="name">Nome:</label>
 					<input
 						type="text"
