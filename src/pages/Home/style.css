@@ -25,12 +25,3 @@ main div .image {
 main .description {
 	width: 675px;
 }
-
-main .description h1{
-	font-size: 4rem;
-	margin-bottom: 2rem;
-}
-
-main .description p{
-    font-size: 1.25rem;
-}

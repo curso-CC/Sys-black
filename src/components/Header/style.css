@@ -8,6 +8,14 @@ header {
 
 }
 
+header h1 {
+	margin-bottom: 0;
+}
+
+header h1 span {
+	color: #3ed5dd;
+}
+
 header ul {
 	display: flex;
     align-items: center;
