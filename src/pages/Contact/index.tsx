@@ -1,6 +1,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { InstagramLogo, TwitterLogo, WhatsappLogo } from "phosphor-react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import * as z from 'zod';
 import { Header } from '../../components/Header';
 
@@ -19,12 +21,31 @@ export function Contact() {
 		resolver: zodResolver(contactFormSchema)
 	})
 
-	function formValidation(data: ContactFormInputs ){
+	function formValidation(data: ContactFormInputs){
+		let formErros: boolean = false
+
 		if(!data.name) {
-			alert("Nome não pode estar vazio!")
+			formErros = true
+			toast.error('Nome não pode ser vazio!');
 		}
+		if(!data.phone) {
+			formErros = true
+            toast.error('Telefone não pode ser vazio!');
+        }
+		if(!data.office) {
+			formErros = true
+            toast.error('Escritório não pode ser vazio!');
+        }
 		if(!data.company) {
-			alert("Empresa não pode estar vazio!")
+			formErros = true
+            toast.error('Empresa não pode ser vazio!');
+        }
+		if(!data.demand) {
+			formErros = true
+            toast.error('Demanda não pode ser vazio!');
+        }
+		if(!formErros) {
+			toast.success('Formulário enviado com sucesso!');
 		}
 	}
 
@@ -53,7 +74,7 @@ export function Contact() {
 						<TwitterLogo size={32} color="#3ed5dd"/>
 					</a>
 
-					<a href="https://www.x.com">
+					<a href="https://www.x.com" >
 						<WhatsappLogo size={32} color="#3ed5dd"/>
 					</a>
 				</section>
