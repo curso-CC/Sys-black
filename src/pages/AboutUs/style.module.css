@@ -1,0 +1,40 @@
+
+.images {
+	position: relative;
+
+	width: 100%;
+	height: auto;
+}
+
+.image1 {
+	position: absolute;
+	left: 25%;
+	top: 40%;
+}
+.images img {
+	height: 18rem;
+	width: 15rem;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.main section {
+	max-width: 550px;
+	gap: 1rem;
+}
+
+.main section h1 {
+    font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.main section p {
+	font-weight: 400;
+	color: #e0e0e0;
+}
