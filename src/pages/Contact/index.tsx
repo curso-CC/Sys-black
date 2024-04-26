@@ -19,7 +19,16 @@ export function Contact() {
 		resolver: zodResolver(contactFormSchema)
 	})
 
-	const onSubmit: SubmitHandler<ContactFormInputs> = (data) => console.log(data)
+	function formValidation(data: ContactFormInputs ){
+		if(!data.name) {
+			alert("Nome não pode estar vazio!")
+		}
+		if(!data.company) {
+			alert("Empresa não pode estar vazio!")
+		}
+	}
+
+	const onSubmit: SubmitHandler<ContactFormInputs> = (data) => formValidation(data)
 
 	return (
         <>
@@ -54,7 +63,7 @@ export function Contact() {
 					<label htmlFor="name">Nome:</label>
 					<input
 						type="text"
-						{...register("name", { required: "Nome pode estar vazio"})}
+						{...register("name", { required: true})}
 						id="name"
 						name="name"
 						placeholder="Digite o seu nome"
@@ -63,7 +72,7 @@ export function Contact() {
 					<label htmlFor="phone">Celular/WhatsApp:</label>
 					<input
 						type="tel"
-						{...register("phone", { required: "Celular não pode estar vazio!"})}
+						{...register("phone", { required: true})}
 						id="phone"
 						name="phone"
 						placeholder="Digite o seu telefone"
@@ -72,7 +81,7 @@ export function Contact() {
 					<label htmlFor="office">Cargo:</label>
 					<input
 						type="text"
-						{...register("office", { required: "Cargo não pode estar vazio!"})}
+						{...register("office", { required: true })}
 						id="office"
 						name="office"
 						placeholder="Descreva o seu cargo"
@@ -81,7 +90,7 @@ export function Contact() {
 					<label htmlFor="company">Empresa:</label>
 					<input
 						type="text"
-						{...register("company", { required: "Campo empresa não pode estar vazio!"})}
+						{...register("company", { required: true})}
 						id="company"
 						name="company"
 						placeholder="Nome da empresa contratante"
@@ -89,7 +98,7 @@ export function Contact() {
 
 					<label htmlFor="demand">Resumo da demanda:</label>
 					<textarea
-						{...register("demand", { required: "Não pode estar vazio!"})}
+						{...register("demand", { required: true})}
 						id="demand"
 						name="demand"
 						placeholder="Descreva o serviço desejado!"
