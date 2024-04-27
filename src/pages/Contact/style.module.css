@@ -1,0 +1,51 @@
+main {
+	display: flex;
+	justify-content: space-around;
+
+	gap: 8rem;
+}
+
+.description {
+    max-width: 450px;
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form textarea {
+	resize: none;
+	height: 4.5rem;
+}
+
+.form textarea,
+.form input {
+	padding: 10px;
+	background-color: #ccc;
+	width: 100%;
+	border: none;
+	border-radius: 6px;
+}
+
+.form textarea,
+.form input:focus {
+	outline: #1ea2a9 solid 2px;
+}
+
+.form button {
+	width: 50%;
+    padding: 10px;
+    background-color: #3ed5dd;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 200ms linear;
+}
+
+.form button:hover {
+	background-color: #1ea2a9;
+}

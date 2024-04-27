@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import * as z from 'zod';
 import { Header } from '../../components/Header';
 
+import styles from './style.module.css';
+
 const contactFormSchema = z.object({
 	name: z.string(),
 	phone: z.string(),
@@ -55,7 +57,7 @@ export function Contact() {
         <>
             <Header />
 			<main>
-				<section id='description'>
+				<section className={styles.description}>
 					<h1>Contate-nos</h1>
 					<p>
 						Tem alguma grande ideia ou marca para desenvolver e precisa de ajuda?
@@ -79,9 +81,9 @@ export function Contact() {
 					</a>
 				</section>
 
-				<form id='contact' onSubmit={handleSubmit(onSubmit)}>
+				<form id='contact' onSubmit={handleSubmit(onSubmit)} className={styles.form}>
 
-					<label htmlFor="name">Nome:</label>
+					<label htmlFor="name" id="input-name">Nome:</label>
 					<input
 						type="text"
 						{...register("name", { required: true})}
