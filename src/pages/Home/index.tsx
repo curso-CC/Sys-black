@@ -11,7 +11,7 @@ export function Home() {
 					<h1>Empowering You in the Digital Age</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa. Proin ipsum nunc, lacinia ac faucibus quis, ullamcorper non metus. </p>
 				</div>
-				<div>
+				<div className='image-container'>
 					<img src={bgImg} className='image'/>
 				</div>
 			</main>
