@@ -47,9 +47,7 @@ export const HeaderContainer = styled.header`
 				background-color: linear-gradient(90deg, rgba(6,138,160,1) 0%, rgba(3,152,186,1) 100%);
 			}
 		}
-
-}
-
+	}
 `
 
 
