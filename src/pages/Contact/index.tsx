@@ -6,7 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import * as z from 'zod';
 import { Header } from '../../components/Header';
 
-import styles from './style.module.css';
+import { Button } from "../../components/Button";
+import { FormContainer, Main } from "./styles";
 
 const contactFormSchema = z.object({
 	name: z.string(),
@@ -56,8 +57,8 @@ export function Contact() {
 	return (
         <>
             <Header />
-			<main>
-				<section className={styles.description}>
+			<Main>
+				<section className="description">
 					<h1>Contate-nos</h1>
 					<p>
 						Tem alguma grande ideia ou marca para desenvolver e precisa de ajuda?
@@ -68,20 +69,20 @@ export function Contact() {
 					<p>consultoriasys@contato.com.br</p>
 
 					<h2>Mídias sociais</h2>
-					<a href="https://www.instagram.com">
+					<a href="https://www.instagram.com" target="_blank">
 						<InstagramLogo size={32} color="#3ed5dd"/>
 					</a>
 
-					<a href="https://www.x.com">
+					<a href="https://www.x.com" target="_blank">
 						<TwitterLogo size={32} color="#3ed5dd"/>
 					</a>
 
-					<a href="https://www.x.com" >
+					<a href="https://web.whatsapp.com/" target="_blank">
 						<WhatsappLogo size={32} color="#3ed5dd"/>
 					</a>
 				</section>
 
-				<form id='contact' onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+				<FormContainer id='contact' onSubmit={handleSubmit(onSubmit)}>
 
 					<label htmlFor="name" id="input-name">Nome:</label>
 					<input
@@ -126,9 +127,9 @@ export function Contact() {
 						name="demand"
 						placeholder="Descreva o serviço desejado!"
 					/>
-					<button type="submit">Enviar</button>
-				</form>
-			</main>
+					<Button url="/contact" titleButton="Enviar" typeButton="submit" />
+				</FormContainer>
+			</Main>
         </>
     )
 }
