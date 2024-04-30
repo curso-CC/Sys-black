@@ -1,16 +1,16 @@
 import image1 from '../../assets/images/image1.png';
 import image2 from '../../assets/images/image2.png';
 import { Header } from "../../components/Header";
-import styles from './style.module.css';
+import { MainContainer } from './style';
 
 export function AboutUs () {
 	return (
 		<>
 			<Header />
-			<main className={styles.main}>
-				<div className={styles.images}>
-					<img  src={image2}  className={styles.image2}/>
-					<img src={image1} className={styles.image1} />
+			<MainContainer>
+				<div className='images'>
+					<img src={image2}  className="image2"/>
+					<img src={image1} className="image1" />
 				</div>
 
 				<section id='about-us'>
@@ -23,7 +23,7 @@ export function AboutUs () {
 						</p>
 					</div>
 				</section>
-			</main>
+			</MainContainer>
 		</>
 	)
 }
