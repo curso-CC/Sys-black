@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
 		margin-bottom: 0;
 
 		span {
-			color: #3ed5dd;
+			color: ${props => props.theme["text-green"]};
 		}
 	}
 
@@ -30,8 +30,8 @@ export const HeaderContainer = styled.header`
 
 		border-radius: 160px;
 
-		background-color: rgb(47,55,56);
-		background-color: linear-gradient(153deg, rgba(47,55,56,1) 0%, rgba(50,69,71,1) 100%);
+		background-color: ${props => props.theme.gray};
+		background-color: linear-gradient(153deg, ${props => props.theme.gray} 0%, ${props => props.theme["text-gray"]} 100%);
 
 		li a {
 			text-decoration: none;

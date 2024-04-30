@@ -25,13 +25,13 @@ export const FormContainer = styled.form`
 	textarea,
 	input {
 		padding: 10px;
-		background-color: #ccc;
+		background-color: ${props => props.theme["text-gray"]};
 		width: 100%;
 		border: none;
 		border-radius: 6px;
 	}
 	&:focus {
-		outline: #1ea2a9 solid 2px;
+		outline: ${props => props.theme["text-transition-green"]} solid 2px;
 	}
 `;
 

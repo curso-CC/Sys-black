@@ -13,19 +13,8 @@ export const MainContainer = styled.main`
 		flex-direction: column;
 		gap: 1rem;
 
-		h1 {
-			font-size: 2rem;
-			font-weight: bold;
-			margin-bottom: 1rem;
-		}
-
-		p {
-			font-weight: 400;
-			color: #e0e0e0;
-		}
-
 		h5{
-			color: #3ed5dd;
+			color: ${props => props.theme["text-green"]};
 		}
 	}
 	.images {
