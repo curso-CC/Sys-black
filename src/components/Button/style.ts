@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const ButtonContainer = styled.button`
 	width: 50%;
 	padding: 10px;
-	background-color: #3ed5dd;
+	background-color: ${props => props.theme["text-green"]};
 	color: white;
 	border: none;
 	border-radius: 6px;
@@ -14,7 +14,7 @@ export const ButtonContainer = styled.button`
 
 	a {
 		text-decoration: none;
-        color: white;
+        color: ${props => props.theme.white};
 	}
 
 	&:hover {
