@@ -21,21 +21,19 @@ export const HeaderContainer = styled.header`
 		display: flex;
 		align-items: center;
 		list-style: none;
-		gap:2rem;
-		margin-right: 6rem;
+
+		gap: 8rem;
 
 
-		background: gray;
 		padding: 1.5rem;
 
 		border-radius: 160px;
 
-		background-color: ${props => props.theme.gray};
-		background-color: linear-gradient(153deg, ${props => props.theme.gray} 0%, ${props => props.theme["text-gray"]} 100%);
-
 		li a {
 			text-decoration: none;
 			color: white;
+
+			font-weight: 700;
 
 			padding: .75rem 1.25rem;
 			border-radius: 160px;
