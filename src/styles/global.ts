@@ -30,6 +30,10 @@ export const GlobalStyle = createGlobalStyle`
 		color: ${props => props.theme.white};
 	}
 
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
+
 	p {
 		font-weight: 400;
 		color: #e0e0e0;
