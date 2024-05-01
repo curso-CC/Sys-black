@@ -58,28 +58,33 @@ export function Contact() {
         <>
             <Header />
 			<Main>
-				<section className="description">
-					<h1>Contate-nos</h1>
-					<p>
-						Tem alguma grande ideia ou marca para desenvolver e precisa de ajuda?
-						Então entre em contato, adoraríamos saber mais sobre seu projeto e fornecer ajuda
-					</p>
+				<section>
+					<div className="description">
+						<h1>Contate-nos</h1>
+						<p>
+							Tem alguma grande ideia ou marca para desenvolver e precisa de ajuda? <br />
+							Então entre em contato, adoraríamos saber mais sobre seu projeto e fornecer ajuda.
+						</p>
+					</div>
 
 					<h2>E-mail</h2>
-					<p>consultoriasys@contato.com.br</p>
+					<p id="email">consultoriasys@contato.com.br</p>
 
 					<h2>Mídias sociais</h2>
-					<a href="https://www.instagram.com" target="_blank">
-						<InstagramLogo size={32} color="#3ed5dd"/>
-					</a>
 
-					<a href="https://www.x.com" target="_blank">
-						<TwitterLogo size={32} color="#3ed5dd"/>
-					</a>
+					<div id="social-media">
+						<a href="https://www.instagram.com" target="_blank">
+							<InstagramLogo size={32} color="#3ed5dd"/>
+						</a>
 
-					<a href="https://web.whatsapp.com/" target="_blank">
-						<WhatsappLogo size={32} color="#3ed5dd"/>
-					</a>
+						<a href="https://www.x.com" target="_blank">
+							<TwitterLogo size={32} color="#3ed5dd"/>
+						</a>
+
+						<a href="https://web.whatsapp.com/" target="_blank">
+							<WhatsappLogo size={32} color="#3ed5dd"/>
+						</a>
+					</div>
 				</section>
 
 				<FormContainer id='contact' onSubmit={handleSubmit(onSubmit)}>
