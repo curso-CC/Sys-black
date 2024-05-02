@@ -29,9 +29,7 @@ export const HeaderContainer = styled.header`
 		padding: 1.5rem;
 
 		border-radius: 160px;
-		background-color: ${props => props.theme.gray};
-		background-color: linear-gradient(153deg, ${props => props.theme.gray} 0%, ${props => props.theme["text-gray"]} 100%);
-    
+
 		li a {
 
 			text-decoration: none;
