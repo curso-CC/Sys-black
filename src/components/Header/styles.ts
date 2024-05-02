@@ -7,10 +7,11 @@ export const HeaderContainer = styled.header`
 	justify-content: space-between;
 	width: 100%;
 
-	padding: .5rem 1rem ;
+	padding: .5rem 2rem ;
 
 	h1 {
 		margin-bottom: 0;
+		font-size: 3rem;
 
 		span {
 			color: ${props => props.theme["text-green"]};
@@ -21,21 +22,23 @@ export const HeaderContainer = styled.header`
 		display: flex;
 		align-items: center;
 		list-style: none;
-		gap:2rem;
-		margin-right: 6rem;
+
+		gap: 8rem;
 
 
-		background: gray;
 		padding: 1.5rem;
 
 		border-radius: 160px;
-
 		background-color: ${props => props.theme.gray};
 		background-color: linear-gradient(153deg, ${props => props.theme.gray} 0%, ${props => props.theme["text-gray"]} 100%);
-
+    
 		li a {
+
 			text-decoration: none;
 			color: white;
+
+			font-weight: 700;
+			font-size: 1.2rem;
 
 			padding: .75rem 1.25rem;
 			border-radius: 160px;
