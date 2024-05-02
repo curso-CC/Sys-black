@@ -13,7 +13,7 @@ export function AboutUs () {
 					<img src={image1} className="image1" />
 				</div>
 
-				<section id='about-us'>
+				<section>
 					<h5>About us</h5>
 					<div id='description'>
 						<h1>Discover Our Journey Protecting Your Digital World with Expertise and Care</h1>
