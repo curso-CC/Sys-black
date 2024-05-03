@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
 	width: 50%;
-	padding: 10px;
+	padding: 15px 20px;
 	background-color: ${props => props.theme["text-green"]};
 	color: white;
 	border: none;
