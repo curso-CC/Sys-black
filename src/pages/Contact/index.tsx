@@ -1,13 +1,14 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { InstagramLogo, TwitterLogo, WhatsappLogo } from "phosphor-react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import * as z from 'zod';
 import { Header } from '../../components/Header';
 
+import { PiInstagramLogoThin, PiTwitterLogoThin, PiWhatsappLogoThin } from "react-icons/pi";
 import { Button } from "../../components/Button";
 import { FormContainer, Main } from "./styles";
+
 
 const contactFormSchema = z.object({
 	name: z.string(),
@@ -81,15 +82,15 @@ export function Contact() {
 
 					<div id="social-media">
 						<a href="https://www.instagram.com" target="_blank">
-							<InstagramLogo size={40} />
+							<PiInstagramLogoThin size={40} />
 						</a>
 
 						<a href="https://www.x.com" target="_blank">
-							<TwitterLogo size={40} />
+							<PiTwitterLogoThin size={40} />
 						</a>
 
 						<a href="https://web.whatsapp.com/" target="_blank">
-							<WhatsappLogo size={40} />
+							<PiWhatsappLogoThin size={40} />
 						</a>
 					</div>
 				</section>
