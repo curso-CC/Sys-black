@@ -62,8 +62,15 @@ export function Contact() {
 					<div className="description">
 						<h1>Contate-nos</h1>
 						<p>
-							Tem alguma grande ideia ou marca para desenvolver e precisa de ajuda? <br />
-							Então entre em contato, adoraríamos saber mais sobre seu projeto e fornecer ajuda.
+							Você quer ter a certeza de que seus projetos e dados armazenados estão seguros? Nós entendemos a importância disso. Por isso, estamos aqui para ajudar.
+						</p>
+						<br />
+						<p>
+							Nossa equipe dedicada de especialistas em segurança cibernética está pronta para garantir que sua empresa esteja protegida contra ameaças digitais. Queremos saber mais sobre seu projeto para fornecer a ajuda de que você precisa.
+						</p>
+						<br />
+						<p>
+							Entre em contato conosco hoje mesmo e proteja o futuro do seu negócio. Sua segurança é a nossa prioridade.
 						</p>
 					</div>
 
@@ -74,15 +81,15 @@ export function Contact() {
 
 					<div id="social-media">
 						<a href="https://www.instagram.com" target="_blank">
-							<InstagramLogo size={32} color="#3ed5dd"/>
+							<InstagramLogo size={40} />
 						</a>
 
 						<a href="https://www.x.com" target="_blank">
-							<TwitterLogo size={32} color="#3ed5dd"/>
+							<TwitterLogo size={40} />
 						</a>
 
 						<a href="https://web.whatsapp.com/" target="_blank">
-							<WhatsappLogo size={32} color="#3ed5dd"/>
+							<WhatsappLogo size={40} />
 						</a>
 					</div>
 				</section>
