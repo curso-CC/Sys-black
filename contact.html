@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Sys<span>black</span></h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Início </a></li>
+                <li><a href="./aboutUs.html">Sobre nós </a></li>
+                <li><a href="./contact.html">Contato </a></li>
+                <li><a href="./services.html">Serviços </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="description">
+                <h1>Contate-nos</h1>
+                <p>
+                    Você quer ter a certeza de que seus projetos e dados armazenados estão seguros? Nós entendemos a importância disso. Por isso, estamos aqui para ajudar.
+                </p>
+                <br />
+                <p>
+                    Nossa equipe dedicada de especialistas em segurança cibernética está pronta para garantir que sua empresa esteja protegida contra ameaças digitais. Queremos saber mais sobre seu projeto para fornecer a ajuda de que você precisa.
+                </p>
+                <br />
+                <p>
+                    Entre em contato conosco hoje mesmo e proteja o futuro do seu negócio. Sua segurança é a nossa prioridade.
+                </p>
+            </div>
+
+            <h2>E-mail</h2>
+            <p id="email">consultoriasys@contato.com.br</p>
+
+            <h2>Mídias sociais</h2>
+
+            <div id="social-media">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./assets/icons/instagram-logo.svg" />
+                </a>
+
+                <a href="https://www.x.com" target="_blank">
+                    <img src="./assets/icons/x-logo.svg" alt="">
+                </a>
+
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="./assets/icons/whatsapp-logo.svg" alt="">
+                </a>
+            </div>
+        </section>
+        <form>
+
+            <label for="name" id="input-name">Nome:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Digite o seu nome"
+            />
+
+            <label for="phone">Celular/WhatsApp:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Digite o seu telefone"
+            />
+
+            <label for="office">Cargo:</label>
+            <input
+                type="text"
+                id="office"
+                name="office"
+                placeholder="Descreva o seu cargo"
+            />
+
+            <label for="company">Empresa:</label>
+            <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Nome da empresa contratante"
+            />
+
+            <label for="demand">Resumo da demanda:</label>
+            <textarea
+                id="demand"
+                name="demand"
+                placeholder="Descreva o serviço desejado!"
+            ></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

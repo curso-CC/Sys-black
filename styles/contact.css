@@ -1,0 +1,95 @@
+main {
+    display: flex;
+	justify-content: space-around;
+    
+    margin-top: 3rem;
+	margin-left: -4rem;
+}
+
+main section {
+    max-width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+main section .description {
+    line-height: 1.5rem;
+}
+
+main section .description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+main section .description p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+main section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main section  #email {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+}
+
+main section #social-media {
+    display: flex;
+    gap: 1.5rem;
+}
+
+main section #social-media a {
+    color: #3ed5dd;
+    transition: color .4s;
+}
+main section #social-media a:hover {
+    color: #068aa0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    
+	width: 30%;
+}
+
+label {
+    color: #e0e0e0;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+input {
+    height: 2.5rem;
+}
+textarea {
+    resize: none;
+    height: 10rem;
+}
+
+textarea,
+input { 
+    padding: 10px;
+    background-color: #e0e0e0;
+    width: 560px;
+    border: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+    color: #171717;
+}
+
+textarea:focus {
+    outline: #068aa0 solid 3px;
+} 
+
+input:focus {
+    outline: #068aa0 solid 3px;
+}
+

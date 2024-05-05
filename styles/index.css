@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    margin: 5rem 1rem;
+}
+
+div .image {
+    width: 600px;
+    height: 600px;
+    margin-right: 130px;
+}
+
+.description {
+    max-width: 850px;
+}

@@ -1,0 +1,108 @@
+main {
+
+    margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    
+	gap: 130px;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+
+    max-width: 550px;
+
+    text-align: justify;
+}
+
+h1 {
+    -webkit-smoothing: antialiased;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3ed5dd;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    -webkit-smoothing: antialiased;
+}
+
+section {
+    display: flex;
+	align-items: center;
+	justify-content: space-around;    
+}
+.cards {
+    height: auto;
+    
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    gap: 5rem;
+}
+.card {
+    background-image: linear-gradient(
+        90deg,
+        hsl(180deg 1% 17%) 0%,
+        hsl(0deg 0% 16%) 9%,
+        hsl(180deg 1% 15%) 18%,
+        hsl(0deg 0% 13%) 27%,
+        hsl(0deg 0% 12%) 37%,
+        hsl(0deg 0% 11%) 46%,
+        hsl(0deg 0% 11%) 55%,
+        hsl(0deg 0% 12%) 64%,
+        hsl(0deg 0% 13%) 73%,
+        hsl(180deg 1% 15%) 82%,
+        hsl(0deg 0% 16%) 91%,
+        hsl(180deg 1% 17%) 100%
+      );
+    
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem;
+    
+    border-radius: 10px;
+    opacity: .9;
+
+    transition: transform 0.5s;
+
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+    border: #3ed5dd 2px solid;
+}
+
+.card h2 {
+    color: #fff;
+}
+
+svg {
+    width: 80px;
+    height: 80px;
+    margin-top: -90px;
+    margin-bottom: 1rem;
+
+}
+.card:hover svg {
+    fill: #3ed5dd;
+    stroke: white;
+}
