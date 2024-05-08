@@ -5,7 +5,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    
+
 	gap: 130px;
 }
 
@@ -22,28 +22,23 @@ main {
 }
 
 h1 {
-    -webkit-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     font-size: 3rem;
+    text-align: center;
 }
+
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #3ed5dd;
     text-align: center;
     margin-bottom: .75rem;
-
-}
-
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    -webkit-smoothing: antialiased;
 }
 
 section {
     display: flex;
 	align-items: center;
-	justify-content: space-around;    
+	justify-content: space-around;
 }
 .cards {
     margin-top: -3rem;
@@ -68,23 +63,22 @@ section {
         #292929 91%,
         #2b2c2c 100%
       );
-    
-    width: 400px;
-    height: 280px;
+
+    width: 20%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     padding: 3rem;
-    
+
     border-radius: 10px;
     opacity: .9;
 
     transition: transform 0.5s;
 
 }
-
 
 .card:hover {
     transform: scale(1.1);
