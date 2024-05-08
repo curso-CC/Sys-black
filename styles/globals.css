@@ -4,7 +4,7 @@
 	--text-green: '#3ed5dd';
 	--text-transition-green: '#068aa0';
 	--dark: '#171717';
-	--gray: '#2c2c2d' 
+	--gray: '#2c2c2d'
 } */
 
 * {
@@ -51,7 +51,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-    
+
 	padding: .5rem 2rem ;
 }
 
@@ -75,6 +75,8 @@ header nav ul {
     padding: 1.5rem;
 
     border-radius: 160px;
+
+	text-align: left;
 }
 
 header nav ul li a {
@@ -97,8 +99,8 @@ header nav ul li a:hover {
 
 
 
-button {
-
+button[type="submit"],
+button[type="button"] {
     width: 50%;
 	padding: 20px 20px;
 	background-color: #068aa0;
@@ -107,7 +109,7 @@ button {
 	border-radius: 6px;
 	cursor: pointer;
 	font-weight: bold;
-    
+
 	transition: background-color 200ms linear;
 }
 
@@ -116,6 +118,11 @@ a {
     color: #fff;
 }
 
-button:hover {
+
+button[type="button"]:hover {
+    background-color: #1ea2a9;
+}
+
+button[type="submit"]:hover {
     background-color: #1ea2a9;
 }
