@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+h2 {
+    color: #3ed5dd;
+}
 p {
     font-size: 1.5rem;
     line-height: 1.75rem;
