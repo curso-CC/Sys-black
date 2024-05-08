@@ -49,7 +49,7 @@ h5{
     font-size: 3.5rem;
 }
 
-p {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+p span {
+    color: #3ed5dd;
+    font-weight: bold;
 }

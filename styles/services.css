@@ -1,6 +1,6 @@
 main {
 
-    margin-top: 5rem;
+    margin-top: 4rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -30,7 +30,7 @@ h2 {
     font-weight: bold;
     color: #3ed5dd;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 
 }
 
@@ -46,31 +46,31 @@ section {
 	justify-content: space-around;    
 }
 .cards {
-    height: auto;
-    
+    margin-top: -3rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
 }
 .card {
     background-image: linear-gradient(
         90deg,
-        hsl(180deg 1% 17%) 0%,
-        hsl(0deg 0% 16%) 9%,
-        hsl(180deg 1% 15%) 18%,
-        hsl(0deg 0% 13%) 27%,
-        hsl(0deg 0% 12%) 37%,
-        hsl(0deg 0% 11%) 46%,
-        hsl(0deg 0% 11%) 55%,
-        hsl(0deg 0% 12%) 64%,
-        hsl(0deg 0% 13%) 73%,
-        hsl(180deg 1% 15%) 82%,
-        hsl(0deg 0% 16%) 91%,
-        hsl(180deg 1% 17%) 100%
+        #2b2c2c 0%,
+        #292929 9%,
+        #262727 18%,
+        #212121 27%,
+        #1f1f1f 37%,
+        #1c1c1c 46%,
+        #1c1c1c 55%,
+        #1f1f1f 64%,
+        #212121 73%,
+        #262727 82%,
+        #292929 91%,
+        #2b2c2c 100%
       );
     
     width: 400px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,9 +100,21 @@ svg {
     height: 80px;
     margin-top: -90px;
     margin-bottom: 1rem;
-
 }
+
 .card:hover svg {
     fill: #3ed5dd;
     stroke: white;
+}
+
+#arrow svg {
+    margin-top: 1.25rem;
+    fill: #3ed5dd;
+    stroke: white;
+
+    transition: all .2s linear;
+}
+
+#arrow svg:hover {
+    transform: scale(1.2);
 }
