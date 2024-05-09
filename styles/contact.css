@@ -1,9 +1,15 @@
+body {
+	overflow-x: hidden;
+}
+
 main {
     display: flex;
-	justify-content: space-around;
-    
+	justify-content: space-between;
+	align-items: center;
     margin-top: 3rem;
-	margin-left: -4rem;
+	margin-left: 2rem;
+	width: 100vw;
+
 }
 
 main section {
@@ -33,7 +39,7 @@ main section h2 {
     font-weight: bold;
 }
 
-main section  #email {
+main section #email {
     font-size: 1.25rem;
     color: #e0e0e0;
 }
@@ -43,20 +49,13 @@ main section #social-media {
     gap: 1.5rem;
 }
 
-main section #social-media a {
-    color: #3ed5dd;
-    transition: color .4s;
-}
-main section #social-media a:hover {
-    color: #068aa0;
-}
 
 form {
     display: flex;
     flex-direction: column;
     gap: .75rem;
-    
-	width: 30%;
+
+	width: 40%;
 }
 
 label {
@@ -74,7 +73,7 @@ textarea {
 }
 
 textarea,
-input { 
+input {
     padding: 10px;
     background-color: #e0e0e0;
     width: 560px;
@@ -87,9 +86,57 @@ input {
 
 textarea:focus {
     outline: #068aa0 solid 3px;
-} 
+}
 
 input:focus {
     outline: #068aa0 solid 3px;
 }
 
+
+@media (max-width: 760px) {
+	main {
+		width: 100vw;
+		margin-left: 0;
+		padding: 1rem 2rem ;
+    }
+
+	main section {
+		max-width: 100%;
+		margin-right: 1rem;
+    }
+
+	main section  h2 {
+		font-size: 1.5rem;
+	}
+
+	main section  p {
+		font-size: 1rem;
+	}
+
+	main section .description {
+		width: 100%;
+    }
+
+	main section .description h1 {
+		font-size: 2rem;
+	}
+
+	main section .description p {
+		font-size: 1rem;
+	}
+
+
+
+	main form {
+		width: 100vw;
+
+		padding: 2rem;
+		margin-right: 1rem;
+	}
+
+	main form input,
+	main form textarea,
+	main form button[type="submit"] {
+		width: 100%;
+	}
+}
