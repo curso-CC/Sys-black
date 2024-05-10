@@ -25,14 +25,22 @@ div .image {
 }
 
 
-@media (min-width: 1200px) {
+@media (max-width: 1900px) {
+
+	h1 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+
    .description {
-        max-width: 850px;
+        max-width: 600px;
     }
 
 	div .image {
-        width: 700px;
-        height: 700px;
+        width: 400px;
+        height: 400px;
         margin-right: 100px;
     }
-}
+ }
