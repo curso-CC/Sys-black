@@ -1,11 +1,16 @@
+body {
+	overflow: hidden;
+}
 main {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 1rem;
+    padding: 1rem 2.5rem 1rem 1rem;
 
     margin: 5rem 1rem;
+
+	width: 100%;
 
 }
 
@@ -16,5 +21,18 @@ div .image {
 }
 
 .description {
-    max-width: 850px;
+    max-width: 800px;
+}
+
+
+@media (min-width: 1200px) {
+   .description {
+        max-width: 850px;
+    }
+
+	div .image {
+        width: 700px;
+        height: 700px;
+        margin-right: 100px;
+    }
 }

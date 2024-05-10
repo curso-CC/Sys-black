@@ -67,7 +67,11 @@ header {
 	width: 100vw;
 
 	padding: 0.5rem 2rem;
-	height: 15%;
+
+	position: fixed;
+	top: 0;
+
+	margin-bottom: 4rem;
 }
 
 header h1 {
@@ -217,6 +221,7 @@ button[type="submit"]:hover {
 
         text-align: center;
 	}
+
     main {
         display: flex;
         flex-direction: column;
