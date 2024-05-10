@@ -25,6 +25,22 @@ div .image {
 }
 
 
+
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer h3 span {
+	color: #3ed5dd;
+}
+
+footer p {
+	font-size: .75rem;
+}
+
 @media (max-width: 1900px) {
 	h1 {
 		font-size: 1.5rem;
@@ -43,3 +59,4 @@ div .image {
         margin-right: 100px;
     }
  }
+
