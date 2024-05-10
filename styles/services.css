@@ -1,3 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+
 main {
 
     margin-top: 8rem;
@@ -34,6 +38,7 @@ h2 {
     text-align: center;
     margin-bottom: .75rem;
 }
+
 p {
 	font-size: 1.25rem;
 }
@@ -114,4 +119,83 @@ svg {
 
 #arrow svg:hover {
     transform: scale(1.2);
+}
+
+
+
+@media (max-width: 760px) {
+	main  {
+		width: 100vw;
+		padding: 2rem;
+	}
+
+
+	main #description h1 {
+		font-size: 1.5rem;
+	}
+
+	main #description h2 {
+		font-size: 1.25rem;
+	}
+
+	main #description p {
+		font-size: .9rem;
+	}
+
+	.cards {
+		flex-direction: column;
+		width: 100vw;
+		padding: 2rem;
+	}
+	.cards .card {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1900px) {
+
+	main #description {
+		margin-top: -2rem;
+
+		gap: 1rem;
+		max-width: 550px;
+	}
+
+
+	main #description h1 {
+		font-size: 1.5rem;
+	}
+
+	main #description h2 {
+		font-size: 1.25rem;
+	}
+
+
+	main #description p {
+		font-size: .9rem;
+	}
+
+	.cards {
+		width: 100vw;
+		margin-top: -6rem;
+		gap: 3rem;
+	}
+
+	.cards .card {
+        height: 180px;
+        padding: 2rem;
+    }
+
+	.cards .card h2 {
+        font-size: 1rem;
+	}
+
+	.cards .card p {
+        font-size: .75rem;
+		line-height: 1rem;
+	}
+	.cards .card a {
+		margin-top: -2rem;
+	}
+
 }
