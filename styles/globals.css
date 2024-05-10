@@ -114,6 +114,10 @@ header nav ul li a {
 	transition: background-color 0.2s linear;
 }
 
+
+.menu-btn {
+	visibility: hidden;
+}
 header nav ul li a:hover {
 	background-color: rgb(6, 138, 160);
 	background-color: linear-gradient(
@@ -147,7 +151,8 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 760px) {
-	i {
+	.menu-btn {
+		visibility: visible;
 		text-align: left;
 		display: block;
 		width: 30px;
