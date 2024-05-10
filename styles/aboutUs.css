@@ -1,5 +1,5 @@
 main {
-    margin: 3rem 5rem;
+    margin: 8rem 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -44,11 +44,47 @@ p span {
 }
 
 
+@media (max-width: 1900px) {
+	main {
+		width: 100%;
+		margin: 3rem auto;
+		padding: 4rem;
+	}
+
+	section {
+		max-width: 500px;
+	}
+
+	#description h1 {
+		font-size: 1.5rem;
+		text-align: justify;
+	}
+
+	h5 {
+		font-size: 1.025rem;
+	}
+
+	#description p {
+        font-size: 1rem;
+    }
+
+	img {
+		width: 200px;
+		height: 250px;
+	}
+}
+
+
 @media (max-width: 760px) {
+	main {
+		width: 100%;
+		margin: 8rem auto;
+
+		padding: 2rem;
+	}
 	#description h1 {
 		font-size: 1.75rem;
-		text-align: left;
-
+		text-align: justify;
 	}
 
 	#description p {
@@ -57,5 +93,4 @@ p span {
 	section button[type="button"] {
 		width: 100%;
 	}
-
 }
