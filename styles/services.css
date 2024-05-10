@@ -1,11 +1,11 @@
 main {
 
-    margin-top: 4rem;
+    margin-top: 8rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
+	width: 100vw;
 	gap: 130px;
 }
 
@@ -16,14 +16,14 @@ main {
     gap: 1.5rem;
     align-items: center;
 
-    max-width: 550px;
+    max-width: 900px;
 
     text-align: justify;
 }
 
 h1 {
     -webkit-font-smoothing: antialiased;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -34,6 +34,9 @@ h2 {
     text-align: center;
     margin-bottom: .75rem;
 }
+p {
+	font-size: 1.25rem;
+}
 
 section {
     display: flex;
@@ -41,12 +44,13 @@ section {
 	justify-content: space-around;
 }
 .cards {
-    margin-top: -3rem;
+    margin-top: -4rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
     gap: 4rem;
 }
+
 .card {
     background-image: linear-gradient(
         90deg,
@@ -65,7 +69,7 @@ section {
       );
 
     width: 20%;
-    height: auto;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,16 +88,15 @@ section {
     transform: scale(1.1);
     border: #3ed5dd 2px solid;
 }
-
 .card h2 {
     color: #fff;
 }
 
 svg {
-    width: 80px;
-    height: 80px;
-    margin-top: -90px;
-    margin-bottom: 1rem;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 1rem;
+	margin-top: -90px;
 }
 
 .card:hover svg {

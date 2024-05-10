@@ -1,9 +1,14 @@
-.description {
-	width: 50%;
-	margin: 0 auto;
+main {
+	width: 65%;
+	margin: 6rem auto;
 	text-align: center;
 
 	margin-bottom: -2rem;
+
+}
+
+main .description h1 {
+	font-size: 2.25rem;
 }
 
 .container-slider {
@@ -35,10 +40,9 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
 
 	padding: 25px;
-	border-radius: 5px;
+	border-radius: 15px;
 
 	background-image: linear-gradient(
 		90deg,
@@ -127,4 +131,55 @@
 	margin-top: 1rem;
 
 	width: 100%;
+}
+
+@media (max-width: 760px) {
+	main .description h1 {
+		font-size: 1.5rem;
+	}
+
+	main .description h2 {
+		font-size: 1.25rem;
+	}
+
+	main .description h3 {
+		font-size: 1rem !important;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	#next-button,
+	#prev-button {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 1900px) {
+	main section h1 {
+		font-size: 1.25rem !important;
+	}
+
+	main section h2 {
+		font-size: 1.025rem !important;
+	}
+	p {
+		font-size: .9rem;
+	}
+
+	.card-slides {
+		height: 500px;
+		width: 350px;
+	}
+	.card-slides slider h2 {
+		font-size: 1.025rem !important;
+	}
+	.slider p {
+		font-size: .9rem;
+	}
+
+	.slider h3 {
+		font-size: 1rem ;
+	}
 }
